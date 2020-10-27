@@ -10,5 +10,5 @@ def get_api(request):
 	access_key = request.session['access_key_tw']
 	access_secret = request.session['access_secret_tw']
 	oauth.set_access_token(access_key, access_secret)
-	api = tweepy.API(oauth,wait_on_rate_limit=True)
+	api = tweepy.API(oauth)
 	return api

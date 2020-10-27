@@ -27,6 +27,6 @@ urlpatterns = [
     url(r'^unauth/$', views.unauth, name='unauth'),
     url(r'^tweetsoffriends/$', views.tweetsoffriends, name='tweetsoffriends'),
     url(r'^friends/$', views.friends, name='friends'),
-    url(r'^tweetRetweetbyfriends/(?P<qtweet>[\w\s]+)/$', views.tweetRetweetbyfriends, name='tweetRetweetbyfriends'),
-    url(r'^likeRetweetByTweetText/(?P<qtweet>[\w\s]+)/(?P<like>(true|false))/(?P<retweet>(true|false))/$', views.likeRetweetByTweetText, name='likeRetweetByTweetText'),
+    url(r'^tweetRetweetbyfriends/$', views.tweetRetweetbyfriends, name='tweetRetweetbyfriends'),
+    url(r'^likeRetweetByTweetText/$', views.likeRetweetByTweetText, name='likeRetweetByTweetText'),
 ]
